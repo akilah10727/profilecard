@@ -10,11 +10,21 @@ body {
   font-family: 'Kumbh Sans', sans-serif;
   background-color: hsl(185, 75%, 39%);
   display: flex;
+  font-size: 18px;
+  padding:1.5rem
   align-items: center;
   min-height: 100vh;
+  flex-direction:column; 
+  justify-content:center;
+  overflow: hidden;
   background-image: url(img/bg-pattern-top.svg), url(img/bg-pattern-bottom.svg);
   background-repeat: no-repeat, no-repeat;
   background-position: right 45vw bottom 25vh, left 45vw top 44vh;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
 }
 
 .container {
@@ -43,7 +53,7 @@ body {
   color: hsl(229, 23%, 23%);
   font-size: 18px;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .profile-card h2 span {
@@ -64,3 +74,16 @@ body {
   margin-top: 30px;
 }
 
+.bg-top {
+  position: absolute;
+  top: -50%;
+  left: -20%;
+  z-index: -1;
+}
+
+.bg-bottom {
+  position: absolute;
+  bottom: -50%;
+  right: -20%;
+  z-index: -1;
+}
